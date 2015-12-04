@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B081F3B1C111FFC00902749 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B081F3A1C111FFC00902749 /* AppDelegate.swift */; };
+		3B081F3D1C111FFC00902749 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B081F3C1C111FFC00902749 /* ViewController.swift */; };
+		3B081F401C111FFC00902749 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B081F3E1C111FFC00902749 /* Main.storyboard */; };
+		3B081F421C111FFC00902749 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B081F411C111FFC00902749 /* Assets.xcassets */; };
+		3B081F451C111FFC00902749 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B081F431C111FFC00902749 /* LaunchScreen.storyboard */; };
+		3B081F501C111FFC00902749 /* InoriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B081F4F1C111FFC00902749 /* InoriTests.swift */; };
+		3B081F5B1C111FFC00902749 /* InoriUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B081F5A1C111FFC00902749 /* InoriUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B081F4C1C111FFC00902749 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B081F2F1C111FFC00902749 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B081F361C111FFC00902749;
+			remoteInfo = Inori;
+		};
+		3B081F571C111FFC00902749 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B081F2F1C111FFC00902749 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B081F361C111FFC00902749;
+			remoteInfo = Inori;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B081F371C111FFC00902749 /* Inori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inori.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B081F3A1C111FFC00902749 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B081F3C1C111FFC00902749 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B081F3F1C111FFC00902749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B081F411C111FFC00902749 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B081F441C111FFC00902749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B081F461C111FFC00902749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B081F4B1C111FFC00902749 /* InoriTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InoriTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B081F4F1C111FFC00902749 /* InoriTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InoriTests.swift; sourceTree = "<group>"; };
+		3B081F511C111FFC00902749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B081F561C111FFC00902749 /* InoriUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InoriUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B081F5A1C111FFC00902749 /* InoriUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InoriUITests.swift; sourceTree = "<group>"; };
+		3B081F5C1C111FFC00902749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B081F341C111FFC00902749 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B081F481C111FFC00902749 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B081F531C111FFC00902749 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B081F2E1C111FFC00902749 = {
+			isa = PBXGroup;
+			children = (
+				3B081F391C111FFC00902749 /* Inori */,
+				3B081F4E1C111FFC00902749 /* InoriTests */,
+				3B081F591C111FFC00902749 /* InoriUITests */,
+				3B081F381C111FFC00902749 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B081F381C111FFC00902749 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B081F371C111FFC00902749 /* Inori.app */,
+				3B081F4B1C111FFC00902749 /* InoriTests.xctest */,
+				3B081F561C111FFC00902749 /* InoriUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B081F391C111FFC00902749 /* Inori */ = {
+			isa = PBXGroup;
+			children = (
+				3B081F3A1C111FFC00902749 /* AppDelegate.swift */,
+				3B081F3C1C111FFC00902749 /* ViewController.swift */,
+				3B081F3E1C111FFC00902749 /* Main.storyboard */,
+				3B081F411C111FFC00902749 /* Assets.xcassets */,
+				3B081F431C111FFC00902749 /* LaunchScreen.storyboard */,
+				3B081F461C111FFC00902749 /* Info.plist */,
+			);
+			path = Inori;
+			sourceTree = "<group>";
+		};
+		3B081F4E1C111FFC00902749 /* InoriTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B081F4F1C111FFC00902749 /* InoriTests.swift */,
+				3B081F511C111FFC00902749 /* Info.plist */,
+			);
+			path = InoriTests;
+			sourceTree = "<group>";
+		};
+		3B081F591C111FFC00902749 /* InoriUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B081F5A1C111FFC00902749 /* InoriUITests.swift */,
+				3B081F5C1C111FFC00902749 /* Info.plist */,
+			);
+			path = InoriUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B081F361C111FFC00902749 /* Inori */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B081F5F1C111FFC00902749 /* Build configuration list for PBXNativeTarget "Inori" */;
+			buildPhases = (
+				3B081F331C111FFC00902749 /* Sources */,
+				3B081F341C111FFC00902749 /* Frameworks */,
+				3B081F351C111FFC00902749 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Inori;
+			productName = Inori;
+			productReference = 3B081F371C111FFC00902749 /* Inori.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B081F4A1C111FFC00902749 /* InoriTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B081F621C111FFC00902749 /* Build configuration list for PBXNativeTarget "InoriTests" */;
+			buildPhases = (
+				3B081F471C111FFC00902749 /* Sources */,
+				3B081F481C111FFC00902749 /* Frameworks */,
+				3B081F491C111FFC00902749 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B081F4D1C111FFC00902749 /* PBXTargetDependency */,
+			);
+			name = InoriTests;
+			productName = InoriTests;
+			productReference = 3B081F4B1C111FFC00902749 /* InoriTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B081F551C111FFC00902749 /* InoriUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B081F651C111FFC00902749 /* Build configuration list for PBXNativeTarget "InoriUITests" */;
+			buildPhases = (
+				3B081F521C111FFC00902749 /* Sources */,
+				3B081F531C111FFC00902749 /* Frameworks */,
+				3B081F541C111FFC00902749 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B081F581C111FFC00902749 /* PBXTargetDependency */,
+			);
+			name = InoriUITests;
+			productName = InoriUITests;
+			productReference = 3B081F561C111FFC00902749 /* InoriUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B081F2F1C111FFC00902749 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = silly;
+				TargetAttributes = {
+					3B081F361C111FFC00902749 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					3B081F4A1C111FFC00902749 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 3B081F361C111FFC00902749;
+					};
+					3B081F551C111FFC00902749 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 3B081F361C111FFC00902749;
+					};
+				};
+			};
+			buildConfigurationList = 3B081F321C111FFC00902749 /* Build configuration list for PBXProject "Inori" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B081F2E1C111FFC00902749;
+			productRefGroup = 3B081F381C111FFC00902749 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B081F361C111FFC00902749 /* Inori */,
+				3B081F4A1C111FFC00902749 /* InoriTests */,
+				3B081F551C111FFC00902749 /* InoriUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B081F351C111FFC00902749 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B081F451C111FFC00902749 /* LaunchScreen.storyboard in Resources */,
+				3B081F421C111FFC00902749 /* Assets.xcassets in Resources */,
+				3B081F401C111FFC00902749 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B081F491C111FFC00902749 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B081F541C111FFC00902749 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B081F331C111FFC00902749 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B081F3D1C111FFC00902749 /* ViewController.swift in Sources */,
+				3B081F3B1C111FFC00902749 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B081F471C111FFC00902749 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B081F501C111FFC00902749 /* InoriTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B081F521C111FFC00902749 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B081F5B1C111FFC00902749 /* InoriUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B081F4D1C111FFC00902749 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B081F361C111FFC00902749 /* Inori */;
+			targetProxy = 3B081F4C1C111FFC00902749 /* PBXContainerItemProxy */;
+		};
+		3B081F581C111FFC00902749 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B081F361C111FFC00902749 /* Inori */;
+			targetProxy = 3B081F571C111FFC00902749 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B081F3E1C111FFC00902749 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B081F3F1C111FFC00902749 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B081F431C111FFC00902749 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B081F441C111FFC00902749 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B081F5D1C111FFC00902749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B081F5E1C111FFC00902749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B081F601C111FFC00902749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Inori/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applesysu.Inori;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3B081F611C111FFC00902749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Inori/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applesysu.Inori;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3B081F631C111FFC00902749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = InoriTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applesysu.InoriTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Inori.app/Inori";
+			};
+			name = Debug;
+		};
+		3B081F641C111FFC00902749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = InoriTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applesysu.InoriTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Inori.app/Inori";
+			};
+			name = Release;
+		};
+		3B081F661C111FFC00902749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = InoriUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applesysu.InoriUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Inori;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3B081F671C111FFC00902749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = InoriUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applesysu.InoriUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Inori;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B081F321C111FFC00902749 /* Build configuration list for PBXProject "Inori" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B081F5D1C111FFC00902749 /* Debug */,
+				3B081F5E1C111FFC00902749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B081F5F1C111FFC00902749 /* Build configuration list for PBXNativeTarget "Inori" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B081F601C111FFC00902749 /* Debug */,
+				3B081F611C111FFC00902749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3B081F621C111FFC00902749 /* Build configuration list for PBXNativeTarget "InoriTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B081F631C111FFC00902749 /* Debug */,
+				3B081F641C111FFC00902749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3B081F651C111FFC00902749 /* Build configuration list for PBXNativeTarget "InoriUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B081F661C111FFC00902749 /* Debug */,
+				3B081F671C111FFC00902749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B081F2F1C111FFC00902749 /* Project object */;
+}

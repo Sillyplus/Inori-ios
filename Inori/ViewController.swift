@@ -8,11 +8,20 @@
 
 import UIKit
 
+import Alamofire
+
 class ViewController: UIViewController {
 
+    @IBAction func testButttonTaped(sender: AnyObject) {
+        Alamofire.request(.GET, "http://localhost:8000/professor/123").responseJSON { response in
+            debugPrint(response)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {

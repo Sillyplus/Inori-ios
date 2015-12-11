@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class LoginViewController: UIViewController {
 
@@ -15,18 +16,19 @@ class LoginViewController: UIViewController {
     @IBOutlet var passwordTF: UITextField!
     
     @IBAction func pressLoginButton(sender: AnyObject) {
-        
+        LoginNetworkHandler.userLogin(emailTF.text!, password: passwordTF.text!, completion: { (result) -> () in
+            print("complete login")
+            self.performSegueWithIdentifier("presentPersonalDetail", sender: sender)
+        })
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 

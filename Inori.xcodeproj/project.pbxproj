@@ -17,6 +17,9 @@
 		3B8399391C19E3670032EDB6 /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8399381C19E3670032EDB6 /* PostListTableViewController.swift */; };
 		3B83993B1C19E52B0032EDB6 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B83993A1C19E52B0032EDB6 /* LoginScreen.storyboard */; };
 		3B83993D1C19E57E0032EDB6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83993C1C19E57E0032EDB6 /* LoginViewController.swift */; };
+		3B8399421C1A68890032EDB6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8399411C1A68890032EDB6 /* Constants.swift */; };
+		3B8399441C1A6B230032EDB6 /* LoginNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8399431C1A6B230032EDB6 /* LoginNetworkHandler.swift */; };
+		3B8399461C1A6C870032EDB6 /* BaseNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8399451C1A6C870032EDB6 /* BaseNetworkHandler.swift */; };
 		53801BE75AB23AE4920D9F16 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179BE2F5828131277FC7EE07 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +58,9 @@
 		3B8399381C19E3670032EDB6 /* PostListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
 		3B83993A1C19E52B0032EDB6 /* LoginScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 		3B83993C1C19E57E0032EDB6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3B8399411C1A68890032EDB6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3B8399431C1A6B230032EDB6 /* LoginNetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNetworkHandler.swift; sourceTree = "<group>"; };
+		3B8399451C1A6C870032EDB6 /* BaseNetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkHandler.swift; sourceTree = "<group>"; };
 		4A0D13E9F4C515E13A3B929B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EA30CC793C08886BB338F0CA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +116,7 @@
 		3B081F391C111FFC00902749 /* Inori */ = {
 			isa = PBXGroup;
 			children = (
+				3B83993E1C1A68290032EDB6 /* Service */,
 				3B8399351C19E27E0032EDB6 /* Utils */,
 				3B8399341C19E2790032EDB6 /* View */,
 				3B8399331C19E2700032EDB6 /* ViewController */,
@@ -161,8 +168,18 @@
 			children = (
 				3B081F461C111FFC00902749 /* Info.plist */,
 				3B081F3A1C111FFC00902749 /* AppDelegate.swift */,
+				3B8399411C1A68890032EDB6 /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		3B83993E1C1A68290032EDB6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3B8399431C1A6B230032EDB6 /* LoginNetworkHandler.swift */,
+				3B8399451C1A6C870032EDB6 /* BaseNetworkHandler.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		3C889D5CC78040A0BB86B209 /* Frameworks */ = {
@@ -367,8 +384,11 @@
 			files = (
 				3B83993D1C19E57E0032EDB6 /* LoginViewController.swift in Sources */,
 				3B8399391C19E3670032EDB6 /* PostListTableViewController.swift in Sources */,
+				3B8399461C1A6C870032EDB6 /* BaseNetworkHandler.swift in Sources */,
 				3B8399371C19E2980032EDB6 /* ViewController.swift in Sources */,
 				3B081F3B1C111FFC00902749 /* AppDelegate.swift in Sources */,
+				3B8399421C1A68890032EDB6 /* Constants.swift in Sources */,
+				3B8399441C1A6B230032EDB6 /* LoginNetworkHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,7 +532,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Inori/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.applesysu.Inori;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -526,7 +546,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Inori/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.applesysu.Inori;
 				PRODUCT_NAME = "$(TARGET_NAME)";

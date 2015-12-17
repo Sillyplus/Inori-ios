@@ -12,7 +12,11 @@ import Alamofire
 class LoginNetworkHandler: BaseNetworkHandler {
     
     class func userLogin(email: String, password: String, completion: ([String: AnyObject]?) -> ()) {
-        getJSONData("/professor/123", completion: completion)
+        let parameters = [
+            "email": "\(email)",
+            "password": "\(password)",
+        ]
+        postTo("/login", para: parameters, completion: completion)
     }
     
 }

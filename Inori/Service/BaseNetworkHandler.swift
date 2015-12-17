@@ -17,7 +17,7 @@ enum HTTPMethod {
 }
 
 class BaseNetworkHandler: NSObject {
-    static let host = "http://localhost:8000"
+    static let host = "http://localhost:8080"
     
     class func getJSONData(path: String, completion: ([String: AnyObject]?) -> ()) {
         let urlString = host.stringByAppendingString(path)
@@ -48,43 +48,33 @@ class BaseNetworkHandler: NSObject {
     }
     
     private class func doHTTPRequest(url: String, para: [String: AnyObject]?, method: HTTPMethod, completion: ([String: AnyObject]?)->()) {
-//        let successColsure = { (dataTask: NSURLSessionDataTask!, response: AnyObject!) -> Void in
-//            let jsonError: NSErrorPointer = nil
-//            let responseDict = response as! NSDictionary
-//            let responseJSON: NSData?
-//            do {
-//                responseJSON = try NSJSONSerialization.dataWithJSONObject(response, options: NSJSONWritingOptions.PrettyPrinted)
-//            } catch let error as NSError {
-//                jsonError.memory = ErrorType
-//                responseJSON = nil
-//            } catch {
-//                fatalError()
-//            }
-//            
-//            let responseString = NSString(data: responseJSON!, encoding: NSUTF8StringEncoding)
-//            print("The Response String is:\n \(responseString!)")
-//            completion(responseDict as? [String: AnyObject])
-//        }
-//        
-//        let failureColsure = { (dataTask: NSURLSessionDataTask!, error: NSError!) -> Void in
-//            print("URLRequest Error: \(error)")
-//            completion(nil)
-//        }
-        
+
         switch (method) {
         case .GET:
             shareManager().request(.GET, url, parameters: para, encoding: .JSON, headers: nil)
                 .validate()
-                .responseJSON { response in
+                .responseJSON(completionHandler: { (response) -> Void in
                     switch response.result {
                     case .Success(let value):
                         print("Success value: \(value)")
                         completion(value as? [String : AnyObject])
                     case .Failure(let error):
-                        print("Faliure error: \(error)")
+                        print("Failure error: \(error)")
                     }
-                }
-//        case .POST:
+                })
+        case .POST:
+            shareManager().request(.POST, url, parameters: para, encoding: .JSON, headers: nil)
+                .validate()
+                .responseJSON(completionHandler: { (response) -> Void in
+                    print("call post")
+                    switch response.result {
+                    case .Success(let value):
+                        print("Success value: \(value)")
+                        completion(value as? [String : AnyObject])
+                    case .Failure(let error):
+                        print("Failure error: \(error)")
+                    }
+                })
 //        case .PUT:
 //        case .DELETE:
         default:

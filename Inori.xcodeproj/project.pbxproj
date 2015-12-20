@@ -20,6 +20,7 @@
 		3B8399421C1A68890032EDB6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8399411C1A68890032EDB6 /* Constants.swift */; };
 		3B8399441C1A6B230032EDB6 /* LoginNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8399431C1A6B230032EDB6 /* LoginNetworkHandler.swift */; };
 		3B8399461C1A6C870032EDB6 /* BaseNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8399451C1A6C870032EDB6 /* BaseNetworkHandler.swift */; };
+		4826E45678A4F5BAE6C5CD9B /* Pods_Inori.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01977455926A82BD4768239F /* Pods_Inori.framework */; };
 		53801BE75AB23AE4920D9F16 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179BE2F5828131277FC7EE07 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01977455926A82BD4768239F /* Pods_Inori.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Inori.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		179BE2F5828131277FC7EE07 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B081F371C111FFC00902749 /* Inori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inori.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B081F3A1C111FFC00902749 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53801BE75AB23AE4920D9F16 /* Pods.framework in Frameworks */,
+				4826E45678A4F5BAE6C5CD9B /* Pods_Inori.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				179BE2F5828131277FC7EE07 /* Pods.framework */,
+				01977455926A82BD4768239F /* Pods_Inori.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -342,7 +346,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Inori/Pods-Inori-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9286894EE9455B0421F3F9C7 /* Check Pods Manifest.lock */ = {
@@ -372,7 +376,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Inori/Pods-Inori-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

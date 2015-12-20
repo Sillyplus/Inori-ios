@@ -54,6 +54,8 @@ class BaseNetworkHandler: NSObject {
             shareManager().request(.GET, url, parameters: para, encoding: .JSON, headers: nil)
                 .validate()
                 .responseJSON(completionHandler: { (response) -> Void in
+                    print("response: \(response)")
+                    
                     switch response.result {
                     case .Success(let value):
                         print("Success value: \(value)")
@@ -61,6 +63,7 @@ class BaseNetworkHandler: NSObject {
                     case .Failure(let error):
                         print("Failure error: \(error)")
                     }
+                    
                 })
         case .POST:
             shareManager().request(.POST, url, parameters: para, encoding: .JSON, headers: nil)

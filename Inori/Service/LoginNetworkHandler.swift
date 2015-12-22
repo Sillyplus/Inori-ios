@@ -8,15 +8,16 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 
 class LoginNetworkHandler: BaseNetworkHandler {
     
-    class func userLogin(email: String, password: String, completion: ([String: AnyObject]?) -> ()) {
+    class func userLogin(email: String, password: String, completion: (JSON) -> ()) {
         let parameters = [
             "email": "\(email)",
             "password": "\(password)",
         ]
-        postTo("/login", para: parameters, completion: completion)
+        post("/login", para: parameters, completion: completion)
     }
     
 }

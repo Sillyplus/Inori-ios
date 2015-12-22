@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 
 enum HTTPMethod {
     case GET
@@ -19,69 +20,81 @@ enum HTTPMethod {
 class BaseNetworkHandler: NSObject {
     static let host = "http://localhost:8080"
     
-    class func getJSONData(path: String, completion: ([String: AnyObject]?) -> ()) {
+    class func get(path: String, completion: (JSON) -> ()) {
         let urlString = host.stringByAppendingString(path)
         self.doHTTPRequest(urlString, para: nil, method: .GET, completion: completion)
     }
     
-    class func postTo(path: String, para: [String: AnyObject], completion: ([String: AnyObject]?) -> ()) {
+    class func post(path: String, para: [String: AnyObject], completion: (JSON) -> ()) {
         let urlString = host.stringByAppendingString(path)
         self.doHTTPRequest(urlString, para: para, method: .POST, completion: completion)
     }
     
-    class func putTo(path: String, para: [String: AnyObject], completion: ([String: AnyObject]?) -> ()) {
+    class func put(path: String, para: [String: AnyObject], completion: (JSON) -> ()) {
         let urlString = host.stringByAppendingString(path)
         self.doHTTPRequest(urlString, para: para, method: .PUT, completion: completion)
     }
     
-    class func deleteData(path: String, para: [String: AnyObject], completion: ([String: AnyObject]?) -> ()) {
+    class func delete(path: String, para: [String: AnyObject], completion: (JSON) -> ()) {
         let urlString = host.stringByAppendingString(path)
         self.doHTTPRequest(urlString, para: para, method: .DELETE, completion: completion)
     }
     
     // MARK: Private Method
-    private class func shareManager() -> Alamofire.Manager {
-        struct Singleton {
-            static let instance = Alamofire.Manager.sharedInstance
-        }
-        return Singleton.instance
-    }
     
-    private class func doHTTPRequest(url: String, para: [String: AnyObject]?, method: HTTPMethod, completion: ([String: AnyObject]?)->()) {
+    private class func doHTTPRequest(url: String, para: [String: AnyObject]?, method: HTTPMethod, completion: (JSON)->()) {
 
         switch (method) {
         case .GET:
-            shareManager().request(.GET, url, parameters: para, encoding: .JSON, headers: nil)
+            request(.GET, url, parameters: para, encoding: .JSON, headers: nil)
                 .validate()
                 .responseJSON(completionHandler: { (response) -> Void in
                     print("response: \(response)")
-                    
                     switch response.result {
                     case .Success(let value):
-                        print("Success value: \(value)")
-                        completion(value as? [String : AnyObject])
+                        completion(JSON(value))
                     case .Failure(let error):
                         print("Failure error: \(error)")
                     }
                     
                 })
+            
         case .POST:
-            shareManager().request(.POST, url, parameters: para, encoding: .JSON, headers: nil)
+            request(.POST, url, parameters: para, encoding: .JSON, headers: nil)
                 .validate()
                 .responseJSON(completionHandler: { (response) -> Void in
-                    print("call post")
                     switch response.result {
                     case .Success(let value):
-                        print("Success value: \(value)")
-                        completion(value as? [String : AnyObject])
+                        completion(JSON(value))
                     case .Failure(let error):
                         print("Failure error: \(error)")
                     }
                 })
-//        case .PUT:
-//        case .DELETE:
-        default:
-            print("Not GET Method")
+            
+        case .PUT:
+            request(.PUT, url, parameters: para, encoding: .JSON, headers: nil)
+                .validate()
+                .responseJSON(completionHandler: { (response) -> Void in
+                    switch response.result {
+                    case .Success(let value):
+                        completion(JSON(value))
+                    case .Failure(let error):
+                        print("Failure error: \(error)")
+                    }
+                })
+
+        case .DELETE:
+            request(.DELETE, url, parameters: para, encoding: .JSON, headers: nil)
+                .validate()
+                .responseJSON(completionHandler: { (response) -> Void in
+                    switch response.result {
+                    case .Success(let value):
+                        completion(JSON(value))
+                    case .Failure(let error):
+                        print("Failure error: \(error)")
+                    }
+                })
+            
         }
     }
 }

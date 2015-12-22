@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 class LoginViewController: UIViewController {
 
@@ -17,8 +18,16 @@ class LoginViewController: UIViewController {
     
     @IBAction func pressLoginButton(sender: AnyObject) {
         LoginNetworkHandler.userLogin(emailTF.text!, password: passwordTF.text!, completion: { (result) -> () in
-            print("complete login")
-            self.performSegueWithIdentifier("presentPersonalDetail", sender: sender)
+            print("\(result)")
+            if result["stat"] == "1" {
+                self.performSegueWithIdentifier("presentPersonalDetail", sender: sender)
+            } else {
+                let msg = result["msg"].stringValue
+                let alert = UIAlertController(title: "Error", message: msg, preferredStyle: .Alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
+
         })
 
     }
@@ -26,7 +35,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         emailTF.text = "inori@inori.com"
-        passwordTF.text = "cyj1415!"
+        passwordTF.text = "31415!"
     }
 
     override func didReceiveMemoryWarning() {

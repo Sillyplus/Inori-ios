@@ -13,7 +13,6 @@
 		3B081F451C111FFC00902749 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B081F431C111FFC00902749 /* LaunchScreen.storyboard */; };
 		3B081F501C111FFC00902749 /* InoriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B081F4F1C111FFC00902749 /* InoriTests.swift */; };
 		3B081F5B1C111FFC00902749 /* InoriUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B081F5A1C111FFC00902749 /* InoriUITests.swift */; };
-		3B8399371C19E2980032EDB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8399361C19E2980032EDB6 /* ViewController.swift */; };
 		3B8399391C19E3670032EDB6 /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8399381C19E3670032EDB6 /* PostListTableViewController.swift */; };
 		3B83993B1C19E52B0032EDB6 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B83993A1C19E52B0032EDB6 /* LoginScreen.storyboard */; };
 		3B83993D1C19E57E0032EDB6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83993C1C19E57E0032EDB6 /* LoginViewController.swift */; };
@@ -56,7 +55,6 @@
 		3B081F561C111FFC00902749 /* InoriUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InoriUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B081F5A1C111FFC00902749 /* InoriUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InoriUITests.swift; sourceTree = "<group>"; };
 		3B081F5C1C111FFC00902749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B8399361C19E2980032EDB6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3B8399381C19E3670032EDB6 /* PostListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
 		3B83993A1C19E52B0032EDB6 /* LoginScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 		3B83993C1C19E57E0032EDB6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 		3B8399331C19E2700032EDB6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				3B8399361C19E2980032EDB6 /* ViewController.swift */,
 				3B8399381C19E3670032EDB6 /* PostListTableViewController.swift */,
 				3B83993C1C19E57E0032EDB6 /* LoginViewController.swift */,
 			);
@@ -389,7 +386,6 @@
 				3B83993D1C19E57E0032EDB6 /* LoginViewController.swift in Sources */,
 				3B8399391C19E3670032EDB6 /* PostListTableViewController.swift in Sources */,
 				3B8399461C1A6C870032EDB6 /* BaseNetworkHandler.swift in Sources */,
-				3B8399371C19E2980032EDB6 /* ViewController.swift in Sources */,
 				3B081F3B1C111FFC00902749 /* AppDelegate.swift in Sources */,
 				3B8399421C1A68890032EDB6 /* Constants.swift in Sources */,
 				3B8399441C1A6B230032EDB6 /* LoginNetworkHandler.swift in Sources */,

@@ -16,6 +16,7 @@
 		3B8146441C2CCCC60072743A /* CourseScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8146421C2CCCC60072743A /* CourseScreen.storyboard */; };
 		3B8146451C2CCCC60072743A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8146431C2CCCC60072743A /* LaunchScreen.storyboard */; };
 		3B8146471C2CCD950072743A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8146461C2CCD950072743A /* AppDelegate.swift */; };
+		3B8146491C2CCE120072743A /* UserData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B8146481C2CCE120072743A /* UserData.plist */; };
 		3B8399391C19E3670032EDB6 /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8399381C19E3670032EDB6 /* PostListTableViewController.swift */; };
 		3B83993B1C19E52B0032EDB6 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B83993A1C19E52B0032EDB6 /* LoginScreen.storyboard */; };
 		3B83993D1C19E57E0032EDB6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83993C1C19E57E0032EDB6 /* LoginViewController.swift */; };
@@ -60,6 +61,7 @@
 		3B8146421C2CCCC60072743A /* CourseScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CourseScreen.storyboard; sourceTree = "<group>"; };
 		3B8146431C2CCCC60072743A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B8146461C2CCD950072743A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B8146481C2CCE120072743A /* UserData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserData.plist; sourceTree = "<group>"; };
 		3B8399381C19E3670032EDB6 /* PostListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
 		3B83993A1C19E52B0032EDB6 /* LoginScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 		3B83993C1C19E57E0032EDB6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				3B081F411C111FFC00902749 /* Assets.xcassets */,
 				3B8146401C2CCCAF0072743A /* Info.plist */,
 				3B8146461C2CCD950072743A /* AppDelegate.swift */,
+				3B8146481C2CCE120072743A /* UserData.plist */,
 			);
 			path = Inori;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				3B8146451C2CCCC60072743A /* LaunchScreen.storyboard in Resources */,
 				3B8146441C2CCCC60072743A /* CourseScreen.storyboard in Resources */,
 				3B83993B1C19E52B0032EDB6 /* LoginScreen.storyboard in Resources */,
+				3B8146491C2CCE120072743A /* UserData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

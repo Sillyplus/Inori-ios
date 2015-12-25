@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B081F3B1C111FFC00902749 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B081F3A1C111FFC00902749 /* AppDelegate.swift */; };
-		3B081F401C111FFC00902749 /* CourseScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B081F3E1C111FFC00902749 /* CourseScreen.storyboard */; };
 		3B081F421C111FFC00902749 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B081F411C111FFC00902749 /* Assets.xcassets */; };
-		3B081F451C111FFC00902749 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B081F431C111FFC00902749 /* LaunchScreen.storyboard */; };
 		3B081F501C111FFC00902749 /* InoriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B081F4F1C111FFC00902749 /* InoriTests.swift */; };
 		3B081F5B1C111FFC00902749 /* InoriUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B081F5A1C111FFC00902749 /* InoriUITests.swift */; };
 		3B8146321C2CC87B0072743A /* UserInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8146311C2CC87B0072743A /* UserInfo.storyboard */; };
 		3B8146341C2CC8B10072743A /* UserInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8146331C2CC8B10072743A /* UserInfoTableViewController.swift */; };
+		3B81463D1C2CCC150072743A /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B81463A1C2CCC150072743A /* UserDataManager.swift */; };
+		3B8146441C2CCCC60072743A /* CourseScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8146421C2CCCC60072743A /* CourseScreen.storyboard */; };
+		3B8146451C2CCCC60072743A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8146431C2CCCC60072743A /* LaunchScreen.storyboard */; };
+		3B8146471C2CCD950072743A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8146461C2CCD950072743A /* AppDelegate.swift */; };
 		3B8399391C19E3670032EDB6 /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8399381C19E3670032EDB6 /* PostListTableViewController.swift */; };
 		3B83993B1C19E52B0032EDB6 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B83993A1C19E52B0032EDB6 /* LoginScreen.storyboard */; };
 		3B83993D1C19E57E0032EDB6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83993C1C19E57E0032EDB6 /* LoginViewController.swift */; };
@@ -45,11 +46,7 @@
 		01977455926A82BD4768239F /* Pods_Inori.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Inori.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		179BE2F5828131277FC7EE07 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B081F371C111FFC00902749 /* Inori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inori.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B081F3A1C111FFC00902749 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
-		3B081F3F1C111FFC00902749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CourseScreen.storyboard; sourceTree = "<group>"; };
 		3B081F411C111FFC00902749 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3B081F441C111FFC00902749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3B081F461C111FFC00902749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		3B081F4B1C111FFC00902749 /* InoriTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InoriTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B081F4F1C111FFC00902749 /* InoriTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InoriTests.swift; sourceTree = "<group>"; };
 		3B081F511C111FFC00902749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +55,11 @@
 		3B081F5C1C111FFC00902749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B8146311C2CC87B0072743A /* UserInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserInfo.storyboard; sourceTree = "<group>"; };
 		3B8146331C2CC8B10072743A /* UserInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewController.swift; sourceTree = "<group>"; };
+		3B81463A1C2CCC150072743A /* UserDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
+		3B8146401C2CCCAF0072743A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B8146421C2CCCC60072743A /* CourseScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CourseScreen.storyboard; sourceTree = "<group>"; };
+		3B8146431C2CCCC60072743A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B8146461C2CCD950072743A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B8399381C19E3670032EDB6 /* PostListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
 		3B83993A1C19E52B0032EDB6 /* LoginScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 		3B83993C1C19E57E0032EDB6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -119,11 +121,13 @@
 		3B081F391C111FFC00902749 /* Inori */ = {
 			isa = PBXGroup;
 			children = (
+				3B8146371C2CCC150072743A /* Utility */,
 				3B83993E1C1A68290032EDB6 /* Service */,
-				3B8399351C19E27E0032EDB6 /* Utility */,
 				3B8399341C19E2790032EDB6 /* View */,
 				3B8399331C19E2700032EDB6 /* ViewController */,
 				3B081F411C111FFC00902749 /* Assets.xcassets */,
+				3B8146401C2CCCAF0072743A /* Info.plist */,
+				3B8146461C2CCD950072743A /* AppDelegate.swift */,
 			);
 			path = Inori;
 			sourceTree = "<group>";
@@ -146,6 +150,14 @@
 			path = InoriUITests;
 			sourceTree = "<group>";
 		};
+		3B8146371C2CCC150072743A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3B81463A1C2CCC150072743A /* UserDataManager.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		3B8399331C19E2700032EDB6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,22 +171,12 @@
 		3B8399341C19E2790032EDB6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3B081F431C111FFC00902749 /* LaunchScreen.storyboard */,
-				3B081F3E1C111FFC00902749 /* CourseScreen.storyboard */,
 				3B83993A1C19E52B0032EDB6 /* LoginScreen.storyboard */,
 				3B8146311C2CC87B0072743A /* UserInfo.storyboard */,
+				3B8146421C2CCCC60072743A /* CourseScreen.storyboard */,
+				3B8146431C2CCCC60072743A /* LaunchScreen.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		3B8399351C19E27E0032EDB6 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				3B081F461C111FFC00902749 /* Info.plist */,
-				3B081F3A1C111FFC00902749 /* AppDelegate.swift */,
-			);
-			name = Utility;
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		3B83993E1C1A68290032EDB6 /* Service */ = {
@@ -311,11 +313,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B081F451C111FFC00902749 /* LaunchScreen.storyboard in Resources */,
 				3B8146321C2CC87B0072743A /* UserInfo.storyboard in Resources */,
 				3B081F421C111FFC00902749 /* Assets.xcassets in Resources */,
+				3B8146451C2CCCC60072743A /* LaunchScreen.storyboard in Resources */,
+				3B8146441C2CCCC60072743A /* CourseScreen.storyboard in Resources */,
 				3B83993B1C19E52B0032EDB6 /* LoginScreen.storyboard in Resources */,
-				3B081F401C111FFC00902749 /* CourseScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,10 +390,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B81463D1C2CCC150072743A /* UserDataManager.swift in Sources */,
 				3B83993D1C19E57E0032EDB6 /* LoginViewController.swift in Sources */,
 				3B8399391C19E3670032EDB6 /* PostListTableViewController.swift in Sources */,
 				3B8399461C1A6C870032EDB6 /* BaseNetworkHandler.swift in Sources */,
-				3B081F3B1C111FFC00902749 /* AppDelegate.swift in Sources */,
+				3B8146471C2CCD950072743A /* AppDelegate.swift in Sources */,
 				3B8146341C2CC8B10072743A /* UserInfoTableViewController.swift in Sources */,
 				3B8399441C1A6B230032EDB6 /* LoginNetworkHandler.swift in Sources */,
 			);
@@ -427,27 +430,6 @@
 			targetProxy = 3B081F571C111FFC00902749 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		3B081F3E1C111FFC00902749 /* CourseScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B081F3F1C111FFC00902749 /* Base */,
-			);
-			name = CourseScreen.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		3B081F431C111FFC00902749 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B081F441C111FFC00902749 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3B081F5D1C111FFC00902749 /* Debug */ = {
@@ -536,7 +518,7 @@
 			baseConfigurationReference = EA30CC793C08886BB338F0CA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Inori/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Inori/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.applesysu.Inori;
@@ -550,7 +532,7 @@
 			baseConfigurationReference = 4A0D13E9F4C515E13A3B929B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Inori/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Inori/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.applesysu.Inori;

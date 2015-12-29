@@ -19,6 +19,7 @@ class LoginViewController: UIViewController {
     @IBAction func pressLoginButton(sender: AnyObject) {
         LoginNetworkHandler.userLogin(emailTF.text!, password: passwordTF.text!, completion: { (result) -> () in
             print("\(result)")
+            
             if result["stat"] == "1" {
                 self.performSegueWithIdentifier("presentPersonalDetail", sender: sender)
             } else {

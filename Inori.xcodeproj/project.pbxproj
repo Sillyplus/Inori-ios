@@ -11,9 +11,8 @@
 		3B081F501C111FFC00902749 /* InoriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B081F4F1C111FFC00902749 /* InoriTests.swift */; };
 		3B081F5B1C111FFC00902749 /* InoriUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B081F5A1C111FFC00902749 /* InoriUITests.swift */; };
 		3B8146321C2CC87B0072743A /* UserInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8146311C2CC87B0072743A /* UserInfo.storyboard */; };
-		3B8146341C2CC8B10072743A /* UserInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8146331C2CC8B10072743A /* UserInfoTableViewController.swift */; };
+		3B8146341C2CC8B10072743A /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8146331C2CC8B10072743A /* UserInfoViewController.swift */; };
 		3B81463D1C2CCC150072743A /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B81463A1C2CCC150072743A /* UserDataManager.swift */; };
-		3B8146441C2CCCC60072743A /* CourseScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8146421C2CCCC60072743A /* CourseScreen.storyboard */; };
 		3B8146451C2CCCC60072743A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8146431C2CCCC60072743A /* LaunchScreen.storyboard */; };
 		3B8146471C2CCD950072743A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8146461C2CCD950072743A /* AppDelegate.swift */; };
 		3B8146491C2CCE120072743A /* UserData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B8146481C2CCE120072743A /* UserData.plist */; };
@@ -22,6 +21,9 @@
 		3B83993D1C19E57E0032EDB6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83993C1C19E57E0032EDB6 /* LoginViewController.swift */; };
 		3B8399441C1A6B230032EDB6 /* LoginNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8399431C1A6B230032EDB6 /* LoginNetworkHandler.swift */; };
 		3B8399461C1A6C870032EDB6 /* BaseNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8399451C1A6C870032EDB6 /* BaseNetworkHandler.swift */; };
+		3B97FCB81C32823F001CE37D /* courseSummaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B97FCB71C32823F001CE37D /* courseSummaryCell.xib */; };
+		3B97FCBA1C328267001CE37D /* CourseSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97FCB91C328267001CE37D /* CourseSummaryTableViewCell.swift */; };
+		3B97FCBC1C328C86001CE37D /* CourseScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B97FCBB1C328C86001CE37D /* CourseScreen.storyboard */; };
 		4826E45678A4F5BAE6C5CD9B /* Pods_Inori.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01977455926A82BD4768239F /* Pods_Inori.framework */; };
 		53801BE75AB23AE4920D9F16 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179BE2F5828131277FC7EE07 /* Pods.framework */; };
 /* End PBXBuildFile section */
@@ -55,10 +57,9 @@
 		3B081F5A1C111FFC00902749 /* InoriUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InoriUITests.swift; sourceTree = "<group>"; };
 		3B081F5C1C111FFC00902749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B8146311C2CC87B0072743A /* UserInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserInfo.storyboard; sourceTree = "<group>"; };
-		3B8146331C2CC8B10072743A /* UserInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewController.swift; sourceTree = "<group>"; };
+		3B8146331C2CC8B10072743A /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		3B81463A1C2CCC150072743A /* UserDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
 		3B8146401C2CCCAF0072743A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B8146421C2CCCC60072743A /* CourseScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CourseScreen.storyboard; sourceTree = "<group>"; };
 		3B8146431C2CCCC60072743A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B8146461C2CCD950072743A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B8146481C2CCE120072743A /* UserData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserData.plist; sourceTree = "<group>"; };
@@ -67,6 +68,9 @@
 		3B83993C1C19E57E0032EDB6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3B8399431C1A6B230032EDB6 /* LoginNetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNetworkHandler.swift; sourceTree = "<group>"; };
 		3B8399451C1A6C870032EDB6 /* BaseNetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkHandler.swift; sourceTree = "<group>"; };
+		3B97FCB71C32823F001CE37D /* courseSummaryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = courseSummaryCell.xib; sourceTree = "<group>"; };
+		3B97FCB91C328267001CE37D /* CourseSummaryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseSummaryTableViewCell.swift; sourceTree = "<group>"; };
+		3B97FCBB1C328C86001CE37D /* CourseScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CourseScreen.storyboard; sourceTree = "<group>"; };
 		4A0D13E9F4C515E13A3B929B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EA30CC793C08886BB338F0CA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,8 +169,9 @@
 			isa = PBXGroup;
 			children = (
 				3B8399381C19E3670032EDB6 /* PostListTableViewController.swift */,
-				3B8146331C2CC8B10072743A /* UserInfoTableViewController.swift */,
+				3B8146331C2CC8B10072743A /* UserInfoViewController.swift */,
 				3B83993C1C19E57E0032EDB6 /* LoginViewController.swift */,
+				3B97FCB91C328267001CE37D /* CourseSummaryTableViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -174,10 +179,11 @@
 		3B8399341C19E2790032EDB6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3B8146431C2CCCC60072743A /* LaunchScreen.storyboard */,
 				3B83993A1C19E52B0032EDB6 /* LoginScreen.storyboard */,
 				3B8146311C2CC87B0072743A /* UserInfo.storyboard */,
-				3B8146421C2CCCC60072743A /* CourseScreen.storyboard */,
-				3B8146431C2CCCC60072743A /* LaunchScreen.storyboard */,
+				3B97FCB71C32823F001CE37D /* courseSummaryCell.xib */,
+				3B97FCBB1C328C86001CE37D /* CourseScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -317,11 +323,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B8146321C2CC87B0072743A /* UserInfo.storyboard in Resources */,
+				3B97FCB81C32823F001CE37D /* courseSummaryCell.xib in Resources */,
 				3B081F421C111FFC00902749 /* Assets.xcassets in Resources */,
 				3B8146451C2CCCC60072743A /* LaunchScreen.storyboard in Resources */,
-				3B8146441C2CCCC60072743A /* CourseScreen.storyboard in Resources */,
 				3B83993B1C19E52B0032EDB6 /* LoginScreen.storyboard in Resources */,
 				3B8146491C2CCE120072743A /* UserData.plist in Resources */,
+				3B97FCBC1C328C86001CE37D /* CourseScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,10 +403,11 @@
 			files = (
 				3B81463D1C2CCC150072743A /* UserDataManager.swift in Sources */,
 				3B83993D1C19E57E0032EDB6 /* LoginViewController.swift in Sources */,
+				3B97FCBA1C328267001CE37D /* CourseSummaryTableViewCell.swift in Sources */,
 				3B8399391C19E3670032EDB6 /* PostListTableViewController.swift in Sources */,
 				3B8399461C1A6C870032EDB6 /* BaseNetworkHandler.swift in Sources */,
 				3B8146471C2CCD950072743A /* AppDelegate.swift in Sources */,
-				3B8146341C2CC8B10072743A /* UserInfoTableViewController.swift in Sources */,
+				3B8146341C2CC8B10072743A /* UserInfoViewController.swift in Sources */,
 				3B8399441C1A6B230032EDB6 /* LoginNetworkHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
